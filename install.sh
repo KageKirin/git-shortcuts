@@ -34,9 +34,17 @@ echo "git grog as 'log --graph --abbrev-commit --decorate --all --format=format:
 git config --global alias.grog 'log --graph --abbrev-commit --decorate --all --format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)"'
 
 
-# TODO
-# rbi -> rebase --interactive
-# safepull sp -> fetch && merffo
-# addi -> add --interactive
-# chp -> cherry-pick
-# chpn -> cherry-pick --no-commit
+
+echo "git rbi as 'rebase --interactive'"
+git config --global alias.rbi 'rebase --interactive'
+echo "git safepull as 'fetch && merffo'"
+git config --global alias.safepull 'fetch && merffo'
+echo "git sp as 'safepull'"
+git config --global alias.sp 'safepull'
+echo "git addi as 'add --interactive'"
+git config --global alias.addi 'add --interactive'
+echo "git chp as 'cherry-pick'"
+git config --global alias.chp 'cherry-pick'
+echo "git chpn as 'cherry-pick --no-commit'"
+git config --global alias.chpn 'cherry-pick --no-commit'
+
