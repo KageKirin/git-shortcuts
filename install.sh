@@ -10,6 +10,12 @@ git config --global alias.please 'push --force-with-lease'
 echo "git commend as 'commit --amend --no-edit'"
 git config --global alias.commend 'commit --amend --no-edit'
 
+echo "git ps as 'push'"
+git config --global alias.ps 'push'
+echo "git pl as 'pull'"
+git config --global alias.pl 'pull'
+
+
 echo "git stsh as 'stash --keep-index'"
 git config --global alias.stsh 'stash --keep-index'
 echo "git staash as 'stash --include-untracked'"
