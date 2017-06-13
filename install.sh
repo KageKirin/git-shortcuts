@@ -41,14 +41,16 @@ git config --global alias.grog 'log --graph --abbrev-commit --decorate --all --f
 
 
 
-echo "git rbi as 'rebase --interactive'"
-git config --global alias.rbi 'rebase --interactive'
+echo "git rbi as 'rebase --interactive --autosquash --autostash'"
+git config --global alias.rbi 'rebase --interactive --autosquash --autostash'
 echo "git safepull as 'fetch && merffo'"
 git config --global alias.safepull 'fetch && merffo'
 echo "git sp as 'safepull'"
 git config --global alias.sp 'safepull'
 echo "git addi as 'add --interactive'"
 git config --global alias.addi 'add --interactive'
+echo "git ap as 'add --patch'"
+git config --global alias.ap 'add --patch'
 echo "git chp as 'cherry-pick'"
 git config --global alias.chp 'cherry-pick'
 echo "git chpn as 'cherry-pick --no-commit'"
