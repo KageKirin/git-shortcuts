@@ -65,9 +65,9 @@ echo "git chpn as 'cherry-pick --no-commit'"
 git config --global alias.xhpn 'cherry-pick -Xtheirs --no-commit'
 
 echo "git fixup <rev> as git commit -m \"fixup! <rev>\""
-git config --global alias.fixup 'f() {git commit -m "fixup! $1"}; f'
+git config --global alias.fixup '!f() {git commit -m "fixup! $1"}; f'
 echo "git squash <rev> as git commit -m \"squash! <rev>\""
-git config --global alias.squash 'f() {git commit -m "squash! $1"}; f'
+git config --global alias.squash '!f() {git commit -m "squash! $1"}; f'
 echo "git oops <rev> as git fixup <rev>"
 git config --global alias.oops 'fixup'
 
