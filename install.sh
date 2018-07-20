@@ -47,12 +47,27 @@ echo "git safepull as 'fetch && merffo'"
 git config --global alias.safepull 'fetch && merffo'
 echo "git sp as 'safepull'"
 git config --global alias.sp 'safepull'
+
 echo "git addi as 'add --interactive'"
 git config --global alias.addi 'add --interactive'
+
 echo "git ap as 'add --patch'"
 git config --global alias.ap 'add --patch'
+
 echo "git chp as 'cherry-pick'"
 git config --global alias.chp 'cherry-pick'
 echo "git chpn as 'cherry-pick --no-commit'"
 git config --global alias.chpn 'cherry-pick --no-commit'
+
+echo "git xhp as 'cherry-pick -Xtheirs'"
+git config --global alias.xhp 'cherry-pick -Xtheirs'
+echo "git chpn as 'cherry-pick --no-commit'"
+git config --global alias.xhpn 'cherry-pick -Xtheirs --no-commit'
+
+echo "git fixup <rev> as git commit -m \"fixup! <rev>\""
+git config --global alias.fixup 'f() {git commit -m "fixup! $1"}; f'
+echo "git squash <rev> as git commit -m \"squash! <rev>\""
+git config --global alias.squash 'f() {git commit -m "squash! $1"}; f'
+echo "git oops <rev> as git fixup <rev>"
+git config --global alias.oops 'fixup'
 
